@@ -1,0 +1,137 @@
+@media only screen and (max-width: 1200px) {
+    
+    .hero-text-box {
+        position: absolute;
+        width: 100%;
+        padding: 0 5%;
+    }
+    .row {padding: 0 5%;}
+
+    .plan-box ul li {
+        font-size: 75%;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 16px;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .contact-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    .works-step {
+        margin-bottom: 40px;
+    }
+    
+    .works-step:last-of-type {
+        margin-bottom: 50px;
+    }
+
+    .btn-app img {
+        height: 40px;
+        margin-right: 5px;
+    }
+    
+    .steps-box:first-child {
+        text-align: center;
+    }
+    .appScreen {
+        width: 55%;
+    }
+
+    
+    
+}
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+
+    .cities img {
+        width: 60%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 150%;
+    }
+
+    h2 {
+        font-size: 125%;
+    }
+
+    .long-copy {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .box {
+        padding: 10%;
+    }
+
+    .plan-box {
+        margin-bottom: 20px;
+    }
+    
+    form .row {
+        margin-bottom: 20px;
+
+    }
+}
+@media only screen and (max-width: 479px) {
+    .contact-form {
+        width: 100%;
+    }
+
+    .social-links {
+        padding-top: 20px;
+        float: none;
+        margin: 0 auto;
+        transform: translateX(25%);
+    }
+
+    .para {
+        margin: 20px auto;
+        font-size: 90%;
+
+    }
+
+    .external-links {
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+        transform: translateX(5%);
+    }
+    .external-links li {
+        font-size: 90%;
+    }
+
+    .external-links li a:link{
+        padding-right: 0px;
+    } 
+
+    .external-links li {
+        padding-right: 22px;
+    }
+    .external-links li:last-of-type {
+        padding-right: 0;
+    }
+
+    
+}
