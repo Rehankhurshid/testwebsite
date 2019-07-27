@@ -65,8 +65,93 @@
     }
 
     .main-nav {
+        float: left;
+        margin-top: 30px;
         display: none;
     }
+
+    .sticky .main-nav {
+        float: left;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .sticky .main-nav li {
+        margin: 0px 0 20px 0;
+    }
+
+    .mob-nav-icon {
+        display: inline-block;
+        float: right;
+        padding-top: 35px;
+        cursor: pointer;
+    }
+
+    .sticky .mob-nav-icon {
+        color: black;
+        margin-top: 0px;
+    }
+    .sticky .mob-nav-icon {
+        display: inline-block;
+        float: right;
+        padding-top: 20px;
+        cursor: pointer;
+    }
+
+    .main-nav li {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .main-nav li a:link::after,
+    .main-nav li a:visited::after {
+        text-decoration: none;
+        display: none;
+        content: "";
+        height: 0;
+        width: 0px;
+        background: transparent;
+        margin: 0px;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    
+    .main-nav li a:hover::after,
+    .main-nav li a:active::after {
+        text-decoration: none;
+        display: none;
+        content: "";
+        border-radius: 0;
+        height: 0;
+        width: 75%;
+        background: #e67e22;
+        margin: 0px;
+    }
+    .sticky .main-nav li a:link::after,
+    .sticky .main-nav li a:visited::after {
+        text-decoration: none;
+        display: none;
+        content: "";
+        height: 0;
+        width: 0px;
+        background: transparent;
+        margin: 0px;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    
+    .sticky .main-nav li a:hover::after,
+    .sticky .main-nav li a:active::after {
+        text-decoration: none;
+        display: none;
+        content: "";
+        border-radius: 0;
+        height: 0;
+        width: 75%;
+        background: #e67e22;
+        margin: 0px;
+    }
+    
 
     h1 {
         font-size: 150%;
@@ -103,7 +188,8 @@
         padding-top: 20px;
         float: none;
         margin: 0 auto;
-        transform: translateX(25%);
+        -webkit-transform: translateX(25%);
+                transform: translateX(25%);
     }
 
     .para {
@@ -116,7 +202,8 @@
         margin: 0 auto;
         text-align: center;
         float: none;
-        transform: translateX(5%);
+        -webkit-transform: translateX(5%);
+                transform: translateX(5%);
     }
     .external-links li {
         font-size: 90%;

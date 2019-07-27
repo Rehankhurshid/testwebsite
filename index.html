@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
     <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet"
@@ -19,25 +20,27 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="">
             <div class="row">
                 <img class="logo" src="resources/img/logo-white.png" alt="Logo">
-                <ul class="main-nav">
-                    <li><a href="#">Food Delivery</a></li>
-                    <li><a href="#">How it Works</a></li>
-                    <li><a href="#">Our Cities</a></li>
-                    <li><a href="#">Sign Up</a></li>
+                <img class="logo-black" src="resources/img/logo.png" alt="Logo">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#food">Food Delivery</a></li>
+                    <li><a href="#work">How it Works</a></li>
+                    <li><a href="#cities">Our Cities</a></li>
+                    <li><a href="#signup">Sign Up</a></li>
                 </ul>
+                <a class="mob-nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye Junk Food. <br> Hello Super Healthy Meals.</h1>
-            <a class="btn btn-full" href="#">I'm Hungry</a>
-            <a class="btn btn-ghost" href="#">Show me More</a>
+            <a class="btn btn-full js--scroll-to-plans" href="#hungry">I'm Hungry</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#more">Show me More</a>
         </div>
     </header>
 
-    <section class="section-features">
+    <section class="section-features js--section-features" id='food'>
         <div class="row">
             <h2>Get Food Fast - not Fast Food</h2>
             <p class="long-copy">
@@ -45,9 +48,9 @@
                 cooking. So let us take care of that, we’re really good at it, we promise!
             </p>
         </div>
-        <div class="row box">
+        <div class="row box =">
 
-            <div class="col span-1-of-4">
+            <div class="col span-1-of-4 js--wp-2">
                 <i class="ion-ios-infinite-outline icon-big"></i>
                 <h3>
                     Up to 365 days/year
@@ -57,7 +60,7 @@
                     You can also choose to order more flexibly if that's your style.
                 </p>
             </div>
-            <div class="col span-1-of-4">
+            <div class="col span-1-of-4 js--wp-2">
                 <i class="ion-ios-stopwatch-outline icon-big"></i>
                 <h3>
                     Ready in 20 minutes
@@ -67,7 +70,7 @@
                     home. We work with the best chefs in each town to ensure that you're 100% happy.
                 </p>
             </div>
-            <div class="col span-1-of-4">
+            <div class="col span-1-of-4 js--wp-2">
                 <i class="ion-ios-nutrition-outline icon-big"></i>
                 <h3>
                     100% organic
@@ -77,7 +80,7 @@
                     antibiotics. Good for your health, the environment, and it also tastes better!
                 </p>
             </div>
-            <div class="col span-1-of-4">
+            <div class="col span-1-of-4 js--wp-2">
                 <i class="ion-ios-cart-outline icon-big"></i>
                 <h3>
                     Order anything
@@ -90,7 +93,7 @@
         </div>
     </section>
 
-    <section class="section-meals">
+    <section class="section-meals js--section-meals">
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo"><img src="resources/img/1.jpg" alt=""></figure>
@@ -124,7 +127,7 @@
 
     <!-- 3 -->
 
-    <section class="section-steps">
+    <section class="section-steps js--section-steps" id="work">
         <div class="row">
             <h2>
                 how it works &mdash; simple as 1, 2, 3
@@ -159,7 +162,7 @@
 
     <!-- #4 -->
 
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
         <div class="row">
             <h2>We're currently in these cities.</h2>
         </div>
@@ -348,7 +351,7 @@
     </section>
 
 
-    <section class="section-form">
+    <section class="section-form" id="signup">
         <div class="row">
             <h2>
                 We're happy to hear from you.
@@ -356,54 +359,54 @@
         </div>
         <div class="row contact-form">
             <form action="">
-               <div class="row">
-                   <div class="col span-1-of-3">
-                       <label for="name">Name</label>
-                   </div>
-                   <div class="col span-2-of-3">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
                         <input type="text" id="name" placeholder="Your Name Please">
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col span-1-of-3">
-                       <label for="name">E-mail</label>
-                   </div>
-                   <div class="col span-2-of-3">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">E-mail</label>
+                    </div>
+                    <div class="col span-2-of-3">
                         <input type="email" id="name" placeholder="Your E-mail Please">
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col span-1-of-3">
-                       <label for="find">How did you find us?</label>
-                   </div>
-                   <div class="col span-2-of-3">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="find">How did you find us?</label>
+                    </div>
+                    <div class="col span-2-of-3">
                         <select name="" id="find">
                             <option value="">Newspaper</option>
                             <option value="">YouTube</option>
                             <option value="">Advertisement</option>
                             <option value="">Other</option>
                         </select>
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col span-1-of-3">
-                       <label for="news">Newsletter?</label>
-                   </div>
-                   <div class="col span-2-of-3">
-                       <input type="checkbox" checked> &nbsp;Yes Please
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="col span-1-of-3">
-                       <label for="news">Drop us a Line</label>
-                   </div>
-                   <div class="col span-2-of-3">
-                       <textarea name="" id="" placeholder="Your Valuable Line . . ."></textarea>
-                   </div>
-               </div>
-               <div class="row submit-form">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="news">Newsletter?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" checked> &nbsp;Yes Please
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="news">Drop us a Line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="" id="" placeholder="Your Valuable Line . . ."></textarea>
+                    </div>
+                </div>
+                <div class="row submit-form">
                     <input type="submit" value="Send it!">
-               </div>
+                </div>
             </form>
         </div>
     </section>
@@ -427,7 +430,18 @@
         </div>
         <div class="row">
             <div class="para">Made with <i class="ion-heart footer-icon"></i> from Rehan Khurshid</div>
-            
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"
+        integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
+        integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"
+        integrity="sha256-8fF/6nzuSprnSYGykwsQo6r9cT9FZAgN7yTl+4NCozg=" crossorigin="anonymous"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+</body>
+
 </html>
